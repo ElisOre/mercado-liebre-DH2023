@@ -64,3 +64,17 @@ main section p {
 .precio {
     font-size: 18px;
 }
+
+footer {
+    text-align: center;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    color: #03264c;
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+footer article {
+    text-align: left;
+}
