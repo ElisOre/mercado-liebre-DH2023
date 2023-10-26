@@ -3,22 +3,64 @@
 header {
   background-color: #eac926;
   font-family: "Roboto", "sons-serif";
+  font-size: 12px;
+}
+
+header section {
+  padding: 15px;
 }
 
 nav {
+    text-align: center;
+}
+
+.fa-bars {
+  color: #ffffff;
+  background-color: #03264c;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.fa-magnifying-glass {
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+article {
+  text-align: center;
+}
+
+article p {
+  display: inline;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-id-card {
+  color: black;
 }
 
 main {
   border: 15px solid #ebebeb;
 }
 
-i {
-  text-align: center;
+h2 {
+    font-size: 24px;
 }
 
-.fa-solid {
-  color: #ffffff;
-  background-color: #03264c;
-  padding: 5px;
-  border-radius: 2px;
+main section p {
+    font-size: 16px;
+}
+
+.precio {
+    font-size: 18px;
 }
