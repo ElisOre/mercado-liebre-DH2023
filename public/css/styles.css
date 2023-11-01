@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Roboto:wght@100;400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #eac926;
   font-family: "Roboto", "sons-serif";
@@ -27,14 +31,6 @@ nav {
   border-radius: 3px;
 }
 
-article {
-  text-align: center;
-}
-
-article p {
-  display: inline;
-}
-
 ul {
     list-style: none;
     text-align: left;
@@ -51,6 +47,16 @@ li a {
 
 main {
   border: 15px solid #ebebeb;
+  width: 90vw;
+}
+
+.producto {
+  margin: 10px;
+}
+
+.descripcion {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
 }
 
 h2 {
@@ -78,3 +84,7 @@ footer {
 footer article {
     text-align: left;
 }
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {}
