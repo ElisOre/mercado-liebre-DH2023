@@ -10,12 +10,8 @@ header {
   font-size: 12px;
 }
 
-header section {
-  padding: 15px;
-}
-
 nav {
-    text-align: center;
+  text-align: center;
 }
 
 .fa-bars {
@@ -32,8 +28,8 @@ nav {
 }
 
 ul {
-    list-style: none;
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
 
 li a {
@@ -46,8 +42,8 @@ li a {
 }
 
 main {
+  background-color: #ebebeb;
   border: 15px solid #ebebeb;
-  width: 90vw;
 }
 
 .producto {
@@ -57,34 +53,53 @@ main {
 .descripcion {
   border-top: 1px solid #ebebeb;
   padding: 15px;
+  background-color: #fff;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 main section p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .precio {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
-.fa-credit-card, .fa-gift, .fa-user-shield {
-    color: #03264c;
-    size: 2em;
-    margin-bottom: 10px;
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+  color: #03264c;
+  size: 2em;
+  margin-bottom: 10px;
 }
 
 footer article {
-    text-align: left;
+  text-align: left;
 }
 
-@media (min-width: 361px) {}
+@media (361px <= width <= 768px) {
+  .produc__descripcion {
+    display: none;
+  }
 
-@media (min-width: 769px) {}
+  nav ul {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .fa-bars {
+    display: none;
+  }
+}
