@@ -12,12 +12,19 @@ body {
 
 header {
   background-color: #eac926;
+  padding: 20px;
   font-size: 12px;
 }
 
-nav {
+#logo {
+  width: 200px;
+}
+
+.header-text {
+  font-weight: 400;
   text-align: center;
 }
+
 
 .fa-bars {
   color: #ffffff;
@@ -32,14 +39,16 @@ nav {
   border-radius: 3px;
 }
 
-ul {
+.header-navBar ul {
   list-style: none;
-  text-align: left;
 }
 
-li a {
+.header-navBar a {
   text-decoration: none;
-  color: black;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
 }
 
 .fa-id-card {
@@ -116,7 +125,7 @@ footer article {
   text-align: left;
 }
 
-@media (361px <= width <= 768px) {
+@media (360px <= width <= 767px) {
   .produc__descripcion {
     display: none;
   }
@@ -126,7 +135,30 @@ footer article {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-text {
+    max-width: 350px;
+    text-align: right;
+  }
+
+  .header-navBar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-navBar ul {
+    display: flex;
+  }
+
+  .header-navBar li {
+    margin: 0 5px;
+  }
+
   .producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
