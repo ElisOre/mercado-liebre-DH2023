@@ -167,3 +167,37 @@ footer article {
     display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 250px;
+  }
+
+  .main-header, .header-navBar {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-header {
+    align-items: center;
+  }
+
+  .header-text {
+    margin: 0;
+    max-width: none;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .header-navBar {
+    margin-top: 40px;
+  }
+
+  .header-navBar li {
+    margin: 0 10px;
+  }
+
+  .header-navBar a {
+    font-size: 19px;
+  }
+}
