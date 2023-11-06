@@ -25,10 +25,12 @@ header {
   text-align: center;
 }
 
-
 .fa-bars {
   color: #ffffff;
   background-color: #03264c;
+  display: block;
+  margin: auto;
+  max-width: min-content;
   padding: 5px;
   border-radius: 2px;
 }
@@ -130,7 +132,7 @@ footer article {
     display: none;
   }
 
-  nav ul {
+  .header-navBar ul {
     display: none;
   }
 }
@@ -173,7 +175,8 @@ footer article {
     width: 250px;
   }
 
-  .main-header, .header-navBar {
+  .main-header,
+  .header-navBar {
     max-width: 1200px;
     margin: auto;
   }
