@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto", "sons-serif";
+  background-color: #ebebeb;
 }
 
 header {
@@ -42,7 +43,7 @@ header {
 }
 
 .fa-magnifying-glass {
-  background-color: #fff;
+  background-color: #ebebeb;
   padding: 2px;
   border-radius: 3px;
 }
@@ -61,11 +62,6 @@ header {
 
 .fa-id-card {
   color: black;
-}
-
-main {
-  background-color: #ebebeb;
-  border: 15px solid #ebebeb;
 }
 
 .categoria-producto {
@@ -163,6 +159,7 @@ footer article {
   .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header-text {
@@ -208,12 +205,11 @@ footer article {
 
 @media (min-width: 1200px) {
   .logo {
-    width: 250px;
+    width: 60%;
   }
 
   .main-header,
   .header-navBar {
-    max-width: 1200px;
     margin: auto;
   }
 
@@ -222,7 +218,6 @@ footer article {
   }
 
   .header-text {
-    margin: 0;
     max-width: none;
     font-size: 22px;
     font-weight: 400;
@@ -238,5 +233,13 @@ footer article {
 
   .header-navBar a {
     font-size: 19px;
+  }
+
+  .main-categoria {
+    flex-wrap: nowrap;
+  }
+
+  .producto {
+    width: 30%;
   }
 }
