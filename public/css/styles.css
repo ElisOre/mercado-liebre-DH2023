@@ -133,6 +133,14 @@ footer article {
   text-align: left;
 }
 
+.produc__descripcion {
+  visibility: hidden;
+}
+
+.producto:hover .produc__descripcion {
+  visibility: visible;
+}
+
 @media (360px <= width <= 767px) {
   .produc__descripcion {
     display: none;
