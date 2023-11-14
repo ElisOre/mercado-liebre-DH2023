@@ -4,3 +4,32 @@
   box-sizing: border-box;
 }
 
+form article {
+  display: flex;
+  justify-content: center;
+  margin: 2.5%;
+}
+
+label, span {
+  width: 40%;
+}
+
+label input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: white;
+}
+
+form button {
+    width: 100%;
+    background-color: #03264c;
+    border-radius: 8px;
+    padding: 10px;
+    border-color: #03264c;
+}
+
+form button a {
+    text-decoration: none;
+    color: white;
+}
