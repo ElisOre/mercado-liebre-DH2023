@@ -27,6 +27,24 @@ header {
   width: 200px;
 }
 
+#header-searchBar {
+  width: 30%;
+  position: relative;
+}
+
+#header-searchBar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.fa-magnifying-glass {
+  font-size: 14px;
+  position: absolute;
+  bottom: 30%;
+  right: 2%;
+}
+
 .header-text {
   font-weight: 400;
   text-align: center;
@@ -40,12 +58,6 @@ header {
   max-width: min-content;
   padding: 5px;
   border-radius: 2px;
-}
-
-.fa-magnifying-glass {
-  background-color: #ebebeb;
-  padding: 2px;
-  border-radius: 3px;
 }
 
 .header-navBar ul {
