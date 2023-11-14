@@ -7,3 +7,64 @@
 body {
   background-color: #ebebeb;
 }
+
+form article,
+form section {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.container__input-text,
+form span {
+  width: 40%;
+}
+
+.input-text {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border-color: white;
+}
+
+.choose {
+  margin: 1.5%;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn-reset {
+  display: none;
+}
+
+#btn-submit {
+  width: 100%;
+  background-color: #03264c;
+  border-radius: 8px;
+  padding: 5px;
+  border-color: #03264c;
+}
+
+#btn-submit a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #btn-reset {
+    display: block;
+    width: 30%;
+    background-color: rgb(214, 22, 22);
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border-color: rgb(214, 22, 22);
+  }
+
+  #btn-submit {
+    width: 50%;
+  }
+}

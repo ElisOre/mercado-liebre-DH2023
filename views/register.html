@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de Usuario</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/register.css" />
   </head>
   <body>
@@ -65,90 +65,123 @@
 
     <form action="/register" method="GET">
       <article>
-        <label>
+        <label class="container__input-text">
           Nombre y apellido:
-          <input type="text" name="nombre" required />
+          <br />
+          <input type="text" name="nombre" required class="input-text" />
         </label>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Nombre de usuario:
-          <input type="text" name="usuario" required />
+          <br />
+          <input type="text" name="usuario" required class="input-text" />
         </label>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Email:
-          <input type="email" name="email" required />
+          <br />
+          <input type="email" name="email" required class="input-text" />
         </label>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Fecha de nacimiento:
-          <input type="date" name="nacimiento" />
+          <br />
+          <input type="date" name="nacimiento" class="input-text" />
         </label>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Domicilio:
-          <input type="text" name="domicilio" required />
+          <br />
+          <input type="text" name="domicilio" required class="input-text" />
         </label>
       </article>
       <article>
-        <span>Perfil de Usuario:</span>
-        <label>
-          <input type="radio" name="perfilUsuario" value="Comprador" />
-          Comprador
-        </label>
-        <label>
-          <input type="radio" name="perfilUsuario" value="Vendedor" /> Vendedor
-        </label>
+        <span>
+          Perfil de usuario:
+          <br />
+          <label>
+            <input type="radio" name="perfilUsuario" value="Comprador" class="choose" />
+            Comprador
+          </label>
+          <label>
+            <input type="radio" name="perfilUsuario" value="Vendedor" class="choose" />
+            Vendedor
+          </label>
+        </span>
       </article>
       <article>
-        <span>Categoría:</span>
-        <br />
-        <label>
-          <input type="checkbox" name="categoria" value="Electro" /> Electro
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" name="categoria" value="Moda" /> Moda
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" name="categoria" value="Hogar" /> Hogar
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" name="categoria" value="Jugueteria" />
-          Juguetería
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" name="categoria" value="VidaSana" /> Vida Sana
-        </label>
+        <span>
+          Categoría:
+          <br />
+          <label>
+            <input type="checkbox" name="categoria" value="Electro" class="choose" /> Electro
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="categoria" value="Moda" class="choose" /> Moda
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="categoria" value="Hogar" class="choose" /> Hogar
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="categoria" value="Jugueteria" class="choose" />
+            Juguetería
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" name="categoria" value="VidaSana" class="choose" /> Vida
+            Sana
+          </label>
+        </span>
       </article>
       <article>
-        <label>
-          Ingresa una foto de perfil:
-          <input type="file" name="fotoUsuario" accept="image/*" />
-        </label>
+        <span>
+          <label>
+            Ingresa una foto de perfil:
+            <input
+              type="file"
+              name="fotoUsuario"
+              accept="image/*"
+              class="input-text"
+            />
+          </label>
+        </span>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Ingresa una contraseña:
-          <input type="password" name="contraseña" required />
+          <br />
+          <input
+            type="password"
+            name="contraseña"
+            required
+            class="input-text"
+          />
         </label>
       </article>
       <article>
-        <label>
+        <label class="container__input-text">
           Confirmar contraseña:
-          <input type="password" name="contraseña" required />
+          <br />
+          <input
+            type="password"
+            name="contraseña"
+            required
+            class="input-text"
+          />
         </label>
       </article>
       <section>
-        <button type="reset">Borrar Formulario</button>
-        <button type="submit"><a href="/">REGISTRARME</a></button>
+        <span class="btns">
+          <button type="reset" id="btn-reset">Borrar Formulario</button>
+          <button type="submit" id="btn-submit"><a href="/">REGISTRARME</a></button>
+        </span>
       </section>
     </form>
 
