@@ -84,6 +84,7 @@ header {
 
 .producto {
   margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .descripcion {
@@ -126,7 +127,7 @@ h2 {
   font-size: 18px;
 }
 
-footer {
+.footer-ayuda {
   text-align: center;
 }
 
@@ -140,9 +141,10 @@ footer {
 
 .fa-truck {
   color: #36b446;
+  transition: transform 0.5s ease-in-out;
 }
 
-footer article {
+footer #copy {
   text-align: left;
 }
 
@@ -152,6 +154,14 @@ footer article {
 
 .producto:hover .produc__descripcion {
   visibility: visible;
+}
+
+.producto:hover {
+  box-shadow: 5px 5px 5px rgb(100, 100, 100);
+}
+
+.fa-truck:hover {
+  transform: rotate(-90deg);
 }
 
 @media (360px <= width <= 767px) {
@@ -262,5 +272,20 @@ footer article {
 
   .producto {
     width: 30%;
+  }
+
+  .footer-ayuda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .footer-ayuda article {
+    padding: 0 15px;
+  }
+
+  .footer-ayuda i:hover {
+    color: #640884;
   }
 }
