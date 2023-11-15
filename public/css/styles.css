@@ -141,6 +141,7 @@ footer {
 
 .fa-truck {
   color: #36b446;
+  transition: transform 0.5s ease-in-out;
 }
 
 footer article {
@@ -157,6 +158,10 @@ footer article {
 
 .producto:hover {
   box-shadow: 7px 7px 5px rgb(100, 100, 100);
+}
+
+.fa-truck:hover {
+  transform: rotate(-90deg);
 }
 
 @media (360px <= width <= 767px) {
