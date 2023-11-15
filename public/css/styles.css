@@ -127,7 +127,7 @@ h2 {
   font-size: 18px;
 }
 
-footer {
+.footer-ayuda {
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ footer {
   transition: transform 0.5s ease-in-out;
 }
 
-footer article {
+footer #copy {
   text-align: left;
 }
 
@@ -272,5 +272,20 @@ footer article {
 
   .producto {
     width: 30%;
+  }
+
+  .footer-ayuda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .footer-ayuda article {
+    padding: 0 15px;
+  }
+
+  .footer-ayuda i:hover {
+    color: #640884;
   }
 }
