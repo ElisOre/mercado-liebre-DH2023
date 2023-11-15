@@ -29,6 +29,10 @@ form button {
     border-color: #03264c;
 }
 
+form button:hover {
+  background-color: #0022AA;
+}
+
 form button a {
     text-decoration: none;
     color: white;
