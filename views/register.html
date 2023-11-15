@@ -22,10 +22,10 @@
           ><img src="images/logo-mercado-liebre.svg" alt="Logo" id="logo"
         /></a>
 
-        <p id="header-searchBar">
-          <input type="search" placeholder="Buscar productos, marcas" />
+        <span id="header-searchBar">
+          <input type="text" placeholder="Buscar productos, marcas" />
           <i class="fa-solid fa-magnifying-glass"></i>
-        </p>
+        </span>
 
         <p class="header-text">
           <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -104,11 +104,21 @@
           Perfil de usuario
           <br />
           <label>
-            <input type="radio" name="perfilUsuario" value="Comprador" class="choose" />
+            <input
+              type="radio"
+              name="perfilUsuario"
+              value="Comprador"
+              class="choose"
+            />
             Comprador
           </label>
           <label>
-            <input type="radio" name="perfilUsuario" value="Vendedor" class="choose" />
+            <input
+              type="radio"
+              name="perfilUsuario"
+              value="Vendedor"
+              class="choose"
+            />
             Vendedor
           </label>
         </span>
@@ -118,25 +128,53 @@
           Categoría
           <br />
           <label>
-            <input type="checkbox" name="categoria" value="Electro" class="choose" /> Electro
+            <input
+              type="checkbox"
+              name="categoria"
+              value="Electro"
+              class="choose"
+            />
+            Electro
           </label>
           <br />
           <label>
-            <input type="checkbox" name="categoria" value="Moda" class="choose" /> Moda
+            <input
+              type="checkbox"
+              name="categoria"
+              value="Moda"
+              class="choose"
+            />
+            Moda
           </label>
           <br />
           <label>
-            <input type="checkbox" name="categoria" value="Hogar" class="choose" /> Hogar
+            <input
+              type="checkbox"
+              name="categoria"
+              value="Hogar"
+              class="choose"
+            />
+            Hogar
           </label>
           <br />
           <label>
-            <input type="checkbox" name="categoria" value="Jugueteria" class="choose" />
+            <input
+              type="checkbox"
+              name="categoria"
+              value="Jugueteria"
+              class="choose"
+            />
             Juguetería
           </label>
           <br />
           <label>
-            <input type="checkbox" name="categoria" value="VidaSana" class="choose" /> Vida
-            Sana
+            <input
+              type="checkbox"
+              name="categoria"
+              value="VidaSana"
+              class="choose"
+            />
+            Vida Sana
           </label>
         </span>
       </article>
@@ -180,34 +218,44 @@
       <section>
         <span class="btns">
           <button type="reset" id="btn-reset">Borrar Formulario</button>
-          <button type="submit" id="btn-submit"><a href="/">REGISTRARME</a></button>
+          <button type="submit" id="btn-submit">
+            <a href="/">REGISTRARME</a>
+          </button>
         </span>
       </section>
     </form>
 
     <footer>
-      <i class="fa-solid fa-credit-card"></i>
-      <strong><p>Pagá con tarjeta o en efectivo</p></strong>
-      <p>
-        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
-        en puntos de pago. ¡Y siempre es seguro!
-      </p>
+      <section class="footer-ayuda">
+        <article>
+          <i class="fa-solid fa-credit-card"></i>
+          <strong><p>Pagá con tarjeta o en efectivo</p></strong>
+          <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </article>
 
-      <i class="fa-solid fa-gift"></i>
-      <h4>Envío gratis desde $ 2.500</h4>
-      <p>
-        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
-        de productos. Es un beneficio de Mercado Puntos.
-      </p>
+        <article>
+          <i class="fa-solid fa-gift"></i>
+          <h4>Envío gratis desde $ 2.500</h4>
+          <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </article>
 
-      <i class="fa-solid fa-user-shield"></i>
-      <h4>Seguridad, de principio a fin</h4>
-      <p>
-        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-        hacer, porque estás siempre protegid@.
-      </p>
+        <article>
+          <i class="fa-solid fa-user-shield"></i>
+          <h4>Seguridad, de principio a fin</h4>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+            puedas hacer, porque estás siempre protegid@.
+          </p>
+        </article>
+      </section>
 
-      <article>
+      <article id="copy">
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
       </article>
     </footer>
