@@ -157,7 +157,7 @@ footer article {
 }
 
 .producto:hover {
-  box-shadow: 7px 7px 5px rgb(100, 100, 100);
+  box-shadow: 5px 5px 5px rgb(100, 100, 100);
 }
 
 .fa-truck:hover {
