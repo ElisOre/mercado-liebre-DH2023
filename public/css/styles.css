@@ -84,6 +84,7 @@ header {
 
 .producto {
   margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .descripcion {
@@ -152,6 +153,10 @@ footer article {
 
 .producto:hover .produc__descripcion {
   visibility: visible;
+}
+
+.producto:hover {
+  box-shadow: 7px 7px 5px rgb(100, 100, 100);
 }
 
 @media (360px <= width <= 767px) {
