@@ -63,7 +63,7 @@
       </nav>
     </header>
 
-    <form action="/register" method="GET">
+    <form action="/register" method="post">
       <article>
         <label class="container__input-text">
           Nombre y apellido
@@ -75,7 +75,7 @@
         <label class="container__input-text">
           Nombre de usuario
           <br />
-          <input type="text" name="usuario" required class="input-text" />
+          <input type="text" name="usuario" required class="input-text" minlength="4" />
         </label>
       </article>
       <article>
@@ -200,6 +200,7 @@
             name="contraseña"
             required
             class="input-text"
+            minlength="8"
           />
         </label>
       </article>
@@ -212,6 +213,7 @@
             name="contraseña"
             required
             class="input-text"
+            minlength="8"
           />
         </label>
       </article>
