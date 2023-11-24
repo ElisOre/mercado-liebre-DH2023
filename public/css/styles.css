@@ -23,7 +23,7 @@ header {
   flex-wrap: wrap;
 }
 
-#logo {
+.logo-container {
   width: 200px;
 }
 
@@ -173,12 +173,22 @@ footer #copy {
     display: none;
   }
 
-  #logo {
-    width: 50%;
+  .main-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container {
+    width: 30%;
   }
 
   #header-searchBar {
     width: 50%;
+  }
+
+  .header-text {
+    margin: auto;
+    padding: 5px;
   }
 
   .producto img {
@@ -235,10 +245,6 @@ footer #copy {
 }
 
 @media (min-width: 1200px) {
-  .logo {
-    width: 60%;
-  }
-
   .main-header,
   .header-navBar {
     margin: auto;
