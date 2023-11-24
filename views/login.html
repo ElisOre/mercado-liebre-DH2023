@@ -63,19 +63,19 @@
       </nav>
     </header>
 
-    <form action="/login" method="GET">
+    <form action="/login" method="post">
       <article>
         <label>
           Nombre de Usuario
           <br />
-          <input type="text" name="usuario" required />
+          <input type="text" name="usuario" required minlength="4" />
         </label>
       </article>
       <article>
         <label>
           Contraseña
           <br />
-          <input type="password" name="contraseña" required />
+          <input type="password" name="contraseña" required minlength="8" />
         </label>
       </article>
       <article>
